@@ -26,11 +26,6 @@ public class CharacterCustomization : Singleton<CharacterCustomization>
         ParseBlendShapeData();
     }
 
-    void Update()
-    {
-        
-    }
-
     private void ParseBlendShapeData()
     {
         string[] cBlendShapeName;

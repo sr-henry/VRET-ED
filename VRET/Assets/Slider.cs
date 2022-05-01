@@ -11,17 +11,12 @@ public class Slider : MonoBehaviour
     void Start()
     {
         slider = GetComponent<UnityEngine.UI.Slider>();
-        slider.onValueChanged.AddListener(delegate { Tas(); });
+        slider.onValueChanged.AddListener(delegate { Task(); });
     }
 
-    private void Tas()
+    private void Task()
     {
         CharacterCustomization.Instance.ChangeBlendShapeValue(sName, slider.value);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
